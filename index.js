@@ -247,7 +247,7 @@ function get20s(array) {
   
   for(let i = 0; i < array.length; i++){
     if(array["years"] < "1900"){
-    newArray.split(array['name'], i)
+    newArray.split(array['name'], 1)
    }
   }
 }
@@ -315,6 +315,8 @@ function lotsOfArt(array) {
   return big100
 }
 console.log('task 7', lotsOfArt(artists));
+//error most likely caused by previous task
+
 
 /* ***** END OF TASKS ***** */
 
