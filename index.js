@@ -308,8 +308,8 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 const big100 = []
 function lotsOfArt(array) {
   for(let i = 0; i <= array.length-1; i++){
-    if(array[i]['paintings'] < 100){
-      big100.push(array[i].name);
+    if(array[i]['paintings'] > 99){
+      big100.push(array[i]['name']);
     }
   }
   return big100
