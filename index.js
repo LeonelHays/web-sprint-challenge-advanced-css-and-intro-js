@@ -242,9 +242,9 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
-
+let newArray = '';
 function get20s(array) {
-  let newArray = '';
+  
   for(let i = 0; i < array.length; i++){
     if(array["years"] < "1900"){
     newArray.split(array['name'], i)
@@ -307,10 +307,9 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 const big100 = []
 function lotsOfArt(array) {
-
-  for(let i = 0; i < array.length; i++){
-    if(array[i]["paintings"] < 100){
-      big100.push(array[i]['name']);
+  for(let i = 0; i <= array.length-1; i++){
+    if(array[i]['paintings'] < 100){
+      big100.push(array[i].name);
     }
   }
   return big100
